@@ -1,0 +1,21 @@
+---
+title: "What's the MPG - Documentation"
+author: "Amir Abbas Shojakhani"
+date: "6/30/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#### A simple app to build a set of car specifications and predict its mileage.
+#### The app uses the mtcars dataset as its base data and prediction is based on a simple linear regression model.
+#### The training model and prediction function is written in a separate R file(Code.R) and built into the app directory so users wont have to load anything manually.
+#### Prior to building the training and prediction models, exploratory data analysis was done and taken into consideration when building the training model(Converting data formats, removing near zero variances etc...)
+### How to use the app:
+#### Pretty simple, just choose your desired car specs from the input controls in the left sidebar and click on the 'Predict the Mileage' button.
+#### The app will then show your chosen specs and predict the car mileage in the main panel of the app. Below the predicted car mileage a +/- range is also mentioned which is the standard deviation the mileage may have. Please keep in mind the prediction is based on a 95% average accuracy, meaning that 95% of the time, the average mileage of the chosen car specs should be in our prediction range.
+#### Have fun and be creative but just keep in mind that radical choices(A car with with a weight of 10,000 lbs and 8 cylinders) with a very low mileage will show as 0.
+#### View the source files on my github: https://github.com/Amirshoja/Shiny-Application-and-Reproducible-Pitch
+### Thank You
